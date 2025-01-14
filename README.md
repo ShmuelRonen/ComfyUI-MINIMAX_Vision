@@ -41,11 +41,6 @@ cd ComfyUI/custom_nodes
 git clone https://github.com/ShmuelRonen/ComfyUI-Minimax-Vision.git
 ```
 
-3. Install required dependencies:
-```bash
-pip install requests Pillow torch
-```
-
 ## Setup
 
 1. Create an account on [Minimax Platform](https://intl.minimaxi.com/user-center/basic-information)
