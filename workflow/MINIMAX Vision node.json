@@ -1,0 +1,210 @@
+{
+  "last_node_id": 350,
+  "last_link_id": 705,
+  "nodes": [
+    {
+      "id": 348,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -2447.77197265625,
+        -755.46044921875
+      ],
+      "size": [
+        566.5225219726562,
+        396.9078369140625
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 705,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Close-up portrait of a young woman with water droplets on her face and neck, her eyes closed, head slightly tilted back, dark hair wet and clinging to her skin. Soft, diffused lighting creates a dreamy atmosphere, highlighting the contours of her face and the glistening water droplets. The background is a blurred gradient of warm and cool tones, suggesting a rainy or misty environment. The overall mood is serene and contemplative, evoking a sense of calm and introspection."
+      ]
+    },
+    {
+      "id": 349,
+      "type": "ComfyUIMinimaxVision",
+      "pos": [
+        -2801.803955078125,
+        -752.8390502929688
+      ],
+      "size": [
+        315,
+        154
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 704
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 703,
+          "widget": {
+            "name": "prompt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            705
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ComfyUIMinimaxVision"
+      },
+      "widgets_values": [
+        "What is in this image?",
+        "MiniMax-Text-01",
+        0.9,
+        4096,
+        1
+      ]
+    },
+    {
+      "id": 350,
+      "type": "String Literal",
+      "pos": [
+        -3606.91552734375,
+        -738.2989501953125
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            703
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "String Literal"
+      },
+      "widgets_values": [
+        "make a 70 words detailed txt2img prompt\n\nnote: no prefix please"
+      ]
+    },
+    {
+      "id": 330,
+      "type": "LoadImage",
+      "pos": [
+        -3153.252685546875,
+        -757.3934936523438
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            704
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_00285_.png",
+        "image"
+      ]
+    }
+  ],
+  "links": [
+    [
+      703,
+      350,
+      0,
+      349,
+      1,
+      "STRING"
+    ],
+    [
+      704,
+      330,
+      0,
+      349,
+      0,
+      "IMAGE"
+    ],
+    [
+      705,
+      349,
+      0,
+      348,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9646149645000006,
+      "offset": [
+        3681.132772728034,
+        965.451833538351
+      ]
+    },
+    "node_versions": {
+      "ComfyUI-MINIMAX_Vision": "unknown",
+      "comfy-image-saver": "65e6903eff274a50f8b5cd768f0f96baf37baea1",
+      "comfy-core": "v0.3.10-2-g160ca08"
+    },
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0
+  },
+  "version": 0.4
+}
