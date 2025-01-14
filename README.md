@@ -40,7 +40,7 @@ cd ComfyUI/custom_nodes
 ```bash
 git clone https://github.com/ShmuelRonen/ComfyUI-Minimax-Vision.git
 ```
-3. restart ComfyUI
+3. Restart ComfyUI
 
 ## Setup
 
