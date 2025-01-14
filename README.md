@@ -2,6 +2,8 @@
 
 This custom node integrates Minimax's Vision capabilities into ComfyUI, allowing you to analyze images and generate descriptions using Minimax's advanced vision models. The model provides exceptionally detailed and comprehensive descriptions with minimal content restrictions, making it ideal for accurate and thorough image analysis.
 
+![site](https://github.com/user-attachments/assets/e49d6cbe-6407-40de-8b59-9f4ffc77ec53)
+
 ## Model Capabilities
 
 - Generates highly detailed, natural descriptions
