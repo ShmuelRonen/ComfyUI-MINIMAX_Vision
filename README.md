@@ -18,7 +18,7 @@ This custom node integrates Minimax's Vision capabilities into ComfyUI, allowing
 
 This node uses Minimax's paid API service:
 - Minimum credit purchase: $25
-- Cost per prompt: Approximately 1-2 cents
+- Cost per vision prompt (text + image): Approximately 1-2 cents
 - API access requires an account at [Minimax Platform](https://intl.minimaxi.com/user-center/basic-information)
 
 ## Features
