@@ -14,7 +14,7 @@ This custom node integrates Minimax's Vision capabilities into ComfyUI, allowing
 - Reliable recognition of artistic styles and technical elements
 - Strong performance with both photographic and artistic content
 
-## ⚠️ Important Note: This is a Paid API
+## Using the API
 
 This node uses Minimax's paid API service:
 - Minimum credit purchase: $25
